@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: pink;
+    height: 80px;
+    width: 100%;
+    color: white;
+}
+label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 7px 13px;
+}
+a.active,a:hover{
+    background: rgb(255, 153, 0);
+    transition: 0.5s;
+    color: black;
+    font-weight: bold;
+}
+.btncheck{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check, .btncheck{
+    display: none;
+}
+.home{
+    background: url("https://wallpapercave.com/dwp1x/V3TsZQz.gif") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+.home h1,h3 {
+    color: white;
+    padding: 0 0 0 150px;
+}
+.home a{
+    margin-left: 150px;
+}
+.home h1{
+    padding-top: 200px;
+    font-size: 100px;
+}
+
+.home .product-btn{
+    margin: 20px 150px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 50px;
+    background: transparent;
+    color: orange;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.home .product-btn:hover{
+    cursor: pointer;
+    background: orange;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    padding: 60px 0;
+    color: white;
+    background-image:  linear-gradient(to bottom, rgba(8, 8, 8, 0.945), rgba(14, 14, 14, 0.911)), url('https://wallpapercave.com/dwp1x/r0GD48W.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+footer .footer-img{
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+footer .useful-links{
+    padding: 10px 20px;
+}
+footer .useful-links li{
+    padding: 10px 0;
+}
+.main-content{
+    padding: 50px 0;
+}
+.main-content h2{
+    text-align: center;
+}
+.product-hr{
+    display: none;
+}
+
+.watch-img1{
+    background: url('https://wallpapercave.com/dwp1x/8S1Xnsv.jpg');
+}
+
+.watch-img2{
+    background: url('https://wallpapercave.com/dwp1x/rXVVbb6.jpg');
+}
+
+.watch-img1, .watch-img2{
+    height: 500px;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.buy-now{
+    padding: 10px 50px;
+    margin: 30px 0;
+    border: none;
+    background: orange;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.buy-now:hover{
+    cursor: pointer;
+    color: orange;
+    border: 2px solid orange;
+    background: transparent;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+@media (max-width: 952px){
+    .btncheck{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.activer{
+        background: rgb(255, 153, 0);
+        color: black;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .home h1{
+        padding-top: 200px;
+        font-size: 50px;        
+    }
+    .home h1, h3{
+        padding-left: 50px;
+    }
+    .home .product-btn{
+        margin: 20px 50px;
+    }
+    footer{
+        text-align: center;
+    }
+    .product-hr{
+        display: block;
+    }
+}
